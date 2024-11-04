@@ -1,0 +1,114 @@
+@use "header";
+@use "footer";
+
+main {
+    .one {
+        margin: 0 !important;
+        padding: 0 !important;
+        border-top: 1px solid #0000001a;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    a {
+        text-decoration: none !important;
+        color: black;
+    }
+
+    .card {
+        border: none !important;
+        border-bottom: 1px solid #0000001a !important;
+        padding: 10px;
+
+        .card-header {
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+
+
+    }
+
+    .card-img {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .btn {
+        padding: .25rem .5rem !important;
+        border-radius: 0 !important;
+        font-weight: 700 !important;
+        font-size: 75% !important;
+        border: 1px solid transparent !important;
+    }
+
+    .story {
+        height: 230px;
+        vertical-align: middle;
+        width: 264px;
+    }
+
+    .card-img:hover {
+        box-shadow: 0 18px 32px -18px #000;
+        transform: translateY(-6px);
+    }
+
+    .card-img {
+        transition: all .2s ease-in-out;
+    }
+}
+
+.site-newsletter {
+    background: #f2f4f5;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.input-group .btn {
+    position: relative;
+    z-index: 2;
+    line-height: 1.5;
+    font-size: large !important;
+}
+
+.input-group {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.form-control {
+    border-radius: 1rem !important;
+    width: 77% !important;
+    line-height: 0.5 !important;
+}
+
+.site-instagram .action {
+    height: 0;
+    margin: -12px auto 0;
+    position: absolute;
+    text-align: center;
+    // top: 50%;
+    width: 100%;
+    z-index: 99;
+}
+
+.site-instagram {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}

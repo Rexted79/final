@@ -1,0 +1,446 @@
+#hots {
+  .offers {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+
+    .owl-theme {
+
+      .owl-dots {
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+        position: absolute;
+        bottom: 0%;
+        right: 10px;
+      }
+    }
+
+    .box {
+      height: 300px;
+      padding: 15px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      .box-img {
+        flex-basis: 30%;
+      }
+
+      .box-info {
+        flex-basis: 50%;
+
+        .name {
+          color: #000;
+          text-decoration: none;
+          font-weight: 600;
+          transition: 150ms;
+
+          &:hover {
+            color: #651fff;
+          }
+        }
+
+        .price {
+          font-size: 1.2rem;
+
+          del {
+            color: #ccc;
+            font-size: 1rem;
+          }
+
+          color: #651fff;
+        }
+
+        ul {
+          margin-top: 15px;
+          list-style: none;
+
+          li {
+            font-size: .9rem;
+            color: #9f9f9f;
+            margin-bottom: 10px;
+
+            span {
+              color: green;
+            }
+          }
+        }
+
+        .count-down {
+          text-align: center;
+
+          span {
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            display: inline-block;
+            line-height: 30px;
+            position: relative;
+
+            &.day {
+              &:before {
+                content: 'روز';
+                position: absolute;
+                bottom: -25px;
+                color: #9f9f9f;
+                text-align: center;
+                right: 0;
+                left: 0;
+                font-size: .8rem;
+              }
+            }
+
+            &.hour {
+              &:before {
+                content: 'ساعت';
+                position: absolute;
+                bottom: -25px;
+                color: #9f9f9f;
+                text-align: center;
+                right: 0;
+                left: 0;
+                font-size: .8rem;
+              }
+            }
+
+            &.min {
+              &:before {
+                content: 'دقیقه';
+                position: absolute;
+                bottom: -25px;
+                color: #9f9f9f;
+                text-align: center;
+                right: 0;
+                left: 0;
+                font-size: .8rem;
+              }
+            }
+
+            &.sec {
+              &:before {
+                content: 'ثانیه';
+                position: absolute;
+                bottom: -25px;
+                color: #9f9f9f;
+                text-align: center;
+                right: 0;
+                left: 0;
+                font-size: .8rem;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .ontime {
+    background-color: #fff;
+
+    border: 1px solid #ddd;
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+
+    .slide-progress {
+      height: 4px;
+      background: #ccc;
+      position: absolute;
+      width: 0;
+      right: 0;
+      bottom: 0;
+      max-width: 100%;
+      display: inline-block;
+      animation: progressbar 10s ease-in-out;
+      animation-iteration-count: 1;
+      animation-iteration-count: infinite;
+      border-radius: 50px;
+    }
+
+    .box {
+      margin: 0 auto;
+      padding: 15px;
+      align-items: center;
+      text-align: center;
+      position: relative;
+
+      .box-img {
+        img {
+          width: 150px;
+          margin: 15px auto;
+        }
+      }
+
+      .box-info {
+        .name {
+          color: #000;
+          text-decoration: none;
+          transition: 150ms;
+          font-size: .9rem;
+
+          &:hover {
+            color: #651fff;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+
+#last-part {
+  background-image: url("../img/y-pic/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      display: block;
+      font-size: 1.5rem;
+      margin: 25px 0;
+
+      span {
+        display: block;
+        font-size: 1.2rem;
+        margin: 20px 0;
+      }
+    }
+
+    .box {
+      background-color: #fff;
+      border: 1px solid #f5f5f5;
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      text-align: center;
+
+      .box-img {
+        width: 120px;
+        height: 90px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 90px;
+          object-fit: cover;
+        }
+      }
+
+      .box-title {
+        a {
+          text-decoration: none;
+          color: #616161;
+          display: block;
+
+          &:hover {
+            color: #651fff;
+          }
+        }
+
+        span {
+          display: block;
+          font-size: .9rem;
+          margin-top: 5px;
+        }
+      }
+
+      .rating {
+        .rate-area {
+          float: left;
+          border-style: none;
+        }
+
+        .rate-area:not(:checked) > input {
+          position: absolute;
+          top: -9999px;
+          clip: rect(0, 0, 0, 0);
+        }
+
+        .rate-area:not(:checked) > label {
+          float: right;
+          width: .9rem;
+          overflow: hidden;
+          white-space: nowrap;
+          cursor: pointer;
+          font-size: 100%;
+          color: lightgrey;
+        }
+
+        .rate-area:not(:checked) > label:before {
+          content: "★";
+        }
+
+        .rate-area > input:checked ~ label {
+          color: gold;
+        }
+
+        .rate-area:not(:checked) > label:hover,
+        .rate-area:not(:checked) > label:hover ~ label {
+          color: gold;
+        }
+
+        .rate-area > input:checked + label:hover,
+        .rate-area > input:checked + label:hover ~ label,
+        .rate-area > input:checked ~ label:hover,
+        .rate-area > input:checked ~ label:hover ~ label,
+        .rate-area > label:hover ~ input:checked ~ label {
+          color: gold;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #hots {
+    .offers {
+      width: 350px;
+      padding: 10px;
+      margin: 0 auto;
+
+      .box {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+
+        .box-img {
+          flex-basis: 100%;
+          margin-bottom: 15px;
+        }
+
+        .box-info {
+          flex-basis: 100%;
+        }
+      }
+    }
+
+    .ontime {
+      width: 330px;
+      padding: 8px;
+      margin: 15px auto;
+    }
+
+  }
+
+  #last-part {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    .container {
+      .box {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'A A' '. .';
+        height: 320px;
+
+        .box-img {
+          margin: 0 auto;
+          grid-area: A;
+          width: 180px;
+          height: 130px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+          }
+        }
+
+        .box-title {
+          a {
+            text-decoration: none;
+            color: #616161;
+            display: block;
+
+            &:hover {
+              color: #651fff;
+            }
+          }
+
+          span {
+            display: block;
+            font-size: .9rem;
+            margin-top: 5px;
+          }
+        }
+
+        .rating {
+          .rate-area {
+            float: left;
+            border-style: none;
+          }
+
+          .rate-area:not(:checked) > input {
+            position: absolute;
+            top: -9999px;
+            clip: rect(0, 0, 0, 0);
+          }
+
+          .rate-area:not(:checked) > label {
+            float: right;
+            width: 0.8em;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 180%;
+            color: lightgrey;
+          }
+
+          .rate-area:not(:checked) > label:before {
+            content: "★";
+          }
+
+          .rate-area > input:checked ~ label {
+            color: gold;
+          }
+
+          .rate-area:not(:checked) > label:hover,
+          .rate-area:not(:checked) > label:hover ~ label {
+            color: gold;
+          }
+
+          .rate-area > input:checked + label:hover,
+          .rate-area > input:checked + label:hover ~ label,
+          .rate-area > input:checked ~ label:hover,
+          .rate-area > input:checked ~ label:hover ~ label,
+          .rate-area > label:hover ~ input:checked ~ label {
+            color: gold;
+          }
+        }
+      }
+    }
+  }
+
+}

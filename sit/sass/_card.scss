@@ -1,0 +1,36 @@
+.card {
+    a {
+        text-decoration: none !important;
+        color: black;
+    }
+
+    border: none !important;
+
+}
+
+.card-header {
+    border: none !important;
+    background-color: transparent !important;
+    text-align: center;
+}
+
+.card-img {
+    border: solid 1px #a5a3a3;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.card-body {
+    border-bottom: solid 1px #a5a3a3;
+}
+
+.card-img:hover {
+    box-shadow: 0 18px 32px -18px #000;
+    transform: translateY(-6px);
+}
+
+.card-img {
+    transition: all .2s ease-in-out;
+}

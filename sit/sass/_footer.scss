@@ -1,0 +1,33 @@
+.bg-black {
+    background-color: rgba(0, 0, 0, 0) !important;
+    height: 11rem;
+}
+
+.sit-footer {
+    a {
+        text-decoration: none;
+        color: #555d65;
+    }
+}
+
+.sit-footer .nav-link {
+    border-right: 1px solid #495057
+}
+
+.nav-link:hover {
+    a {
+        color: white;
+    }
+}
+
+.nav-link {
+    margin: 1rem;
+}
+
+.copy {
+    text-align: center;
+    color: #555d65;
+    border-top: 1px solid #495057;
+    padding: 1rem;
+    margin: 1rem;
+}
